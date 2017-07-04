@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Annuaire</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-wrapper">
+          <a href="/annuaire/view/Contact.php" >Voir mes contact</a>
+        </div>
+      </nav>
+    </header>
+    <form class="" action="index2.php" method="POST">
+      <h3>Saisie contact</h3>
+      <div class="">
+        <label for="">Nom</label>
+        <input type="text" name="LastName" placeholder='Dupont'>
+        <label for="">Prénom</label>
+        <input type="text" name="FirstName" placeholder="Roger" >
+        <label for="">Entreprise</label>
+        <input type="text" name="Company" placeholder="Garagiste">
+        <label for="">Numero de Telephone</label>
+        <input type="text" name="CellPhone">
+        <label for="">Date de naissance</label>
+        <input type="text" name="Birthdate">
+        <label for="">Adresse</label>
+        <input type="text" name="Address" placeholder="8 rue Victor Hugo">
+        <div>
+          <h4>GROUPE:</h4>
+          <input type="checkbox" name="Famille" id='Famille' value="1">
+          <label for="Famille">Famille</label>
+          <input type="checkbox" name="Boulot" id='Boulot' value="2">
+          <label for  ='Boulot'>Boulot</label>
+      </div>
+
+      <div>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>
